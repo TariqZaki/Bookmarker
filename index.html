@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--!----- LINK WEBSITE ICON ------>
+    <link rel="icon" href="images/5801789.png">
+    <!--!----- LINK WEBSITE ICON ------>
+
+    <!--!----- website title ------>
+    <title>Bookmark</title>
+    <!--!----- website title ------>
+
+    <!--!----- LINK GOOGLE FONTS ------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Pacifico&family=Teko:wght@300..700&display=swap"
+        rel="stylesheet">
+    <!--!----- LINK GOOGLE FONTS ------>
+
+    <!--!----- LINK CSS ------>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--!----- LINK CSS ------>
+</head>
+
+<body>
+
+    <section id="home" class="home min-vh-100">
+        <div class="container">
+            <div class="row p-3">
+                <div class="col-lg-5">
+                    <div class="box1 d-flex flex-column mt-5 shadow-lg p-4 rounded-4 ">
+                        <div class="tittle position-relative py-5 mb-3 d-flex justify-content-around align-items-start">
+                            <h1>Bookmarker</h1>
+                            <i class="fa-solid fa-bookmark fs-1 fa-fade" style="color: #005C78;"></i>
+                        </div>
+                        <div class="brdr w-75 mx-auto"></div>
+                        <div class="address d-flex justify-content-center align-items-center py-3">
+                            <i class="fa-solid fa-bookmark"></i>
+                            <h3 class="p-3 fs-5 text-center">Bookmark your favorite site</h3>
+                            <i class="fa-solid fa-bookmark"></i>
+                        </div>
+                        <div class="form-floating my-3">
+                            <input type="text"
+                                class="form-control border-0 border-bottom bg-transparent w-75 mx-auto shadow-sm"
+                                id="siteInput" placeholder="Bookmark Name...">
+                            <div id="alertMsg" class="alert alert-danger d-none"><span>Site name must first upperCase
+                                    then lowerCase </span></div>
+                            <label for="siteInput" class="ms-5"><i class="fa-solid fa-book"></i> Site Name...</label>
+                        </div>
+
+                        <div class="form-floating my-3">
+                            <input type="text"
+                                class="form-control border-0 border-bottom bg-transparent w-75 mx-auto shadow-sm"
+                                id="urlInput" placeholder="Website URL...">
+                            <div id="alertMsg" class="alert alert-danger d-none"><span>Site url must werite https://www.
+                                    ... </span></div>
+                            <label for="urlInput" class="ms-5"><i class="fa-solid fa-link"></i> Site URL...</label>
+                        </div>
+
+                        <button class="btn btn-danger m-auto my-5" id="addBtn">Add Bookmark</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="box2 shadow-lg mt-5 rounded-4 p-5">
+                        <div class="form-floating my-3">
+                            <input type="text"
+                                class="form-control border-0 border-bottom bg-transparent w-100 shadow-sm"
+                                id="bookmarkInput" placeholder="Search about Bookmark...">
+                            <label for="bookmarkInput"><i class="fa-solid fa-magnifying-glass"></i> Search about
+                                Bookmark...</label>
+                        </div>
+
+                        <table class="w-100">
+                            <thead class="bg-body  text-center text-capitalize">
+                                <tr>
+                                    <th>index</th>
+                                    <th>website Name</th>
+                                    <th>delete</th>
+                                    <th>visite</th>
+                                </tr>
+                            </thead>
+                            <tbody id="trData">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--!---- LINK JS ----->
+    <script src="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.11.0/dist/sweetalert2.all.min.js
+    "></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <!--!---- LINK JS ----->
+</body>
+
+</html>

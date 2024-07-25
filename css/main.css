@@ -1,0 +1,93 @@
+/* !<---- global style ----> */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+:root {
+  --address-color: #352e28;
+  --bg-address: #fec260;
+  --bg-home: #f7ecde;
+}
+body {
+  font-family: "Changa", sans-serif;
+}
+/* !<---- global style ----> */
+
+/* ?<---- home section style ----> */
+#home {
+  background-image: url(../images/computer-keyboards-wallpaper-preview.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+#home .box1 {
+  background: linear-gradient(#dad3be, #6b8a7a);
+}
+#home .box2 {
+  background: linear-gradient(#dad3be, #6b8a7a);
+}
+#home .tittle::before {
+  content: "";
+  position: absolute;
+  bottom: 50px;
+  left: 5%;
+  width: 90%;
+  height: 20px;
+  background-color: #989797;
+  transition: all 0.3s ease-in-out;
+}
+#home .tittle:hover::before {
+  height: 25%;
+}
+#home .brdr {
+  border: 1px dashed #333;
+}
+#home .container .row h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 500;
+  color: #333;
+  z-index: 5;
+}
+#home .address {
+  font-family: "Righteous", sans-serif;
+  background-image: linear-gradient(50deg, #005c78, #e88d67);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#home .tittle {
+  font-size: 50px;
+}
+.form-control:focus {
+  border: 1px solid var(--address-color);
+  box-shadow: none;
+}
+/* ?<---- home section style ----> */
+
+/* !<---- media query style ----> */
+@media (max-width: 992px) {
+  #home .tittle::before {
+    content: "";
+    position: absolute;
+    bottom: 50px;
+    left: 13%;
+    width: 75%;
+    height: 20px;
+    background-color: #989797;
+    transition: all 0.3s ease-in-out;
+  }
+}
+@media (max-width: 567px) {
+  #home .tittle::before {
+    content: "";
+    position: absolute;
+    bottom: 50px;
+    left: 0%;
+    width: 100%;
+    height: 20px;
+    background-color: #989797;
+    transition: all 0.3s ease-in-out;
+  }
+}
+/* !<---- media query style ----> */
